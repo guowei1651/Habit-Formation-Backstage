@@ -31,6 +31,10 @@
     {
       "id": "habit_template",
       "isDefault": false
+    },
+    {
+      "id": "devices",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

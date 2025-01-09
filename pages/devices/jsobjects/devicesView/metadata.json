@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "677bf5408959e507b80f055e_be29db53-dc16-4b14-b2d1-d56713832998",
+  "id": "devices_devicesView",
+  "unpublishedCollection": {
+    "name": "devicesView",
+    "pageId": "devices",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "DeviceTypes",
+        "value": "[]"
+      }
+    ]
+  }
+}

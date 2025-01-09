@@ -1,0 +1,4 @@
+SELECT d.*, udr.owner_id, udr.display_name, udr.info
+FROM devices as d left outer JOIN user_device_relations as udr 
+    ON d.serial = udr.serial and udr.delete_flag = false 
+WHERE d.type_id not in (1,2);
