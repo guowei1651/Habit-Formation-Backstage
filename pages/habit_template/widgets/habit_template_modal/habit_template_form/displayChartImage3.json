@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ta5hiaxhid",
+  "leftColumn": 33,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 41,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "originalBottomRow": 45,
+  "originalTopRow": 33,
+  "parentColumnSpace": 13.0078125,
+  "parentId": "h43gpsbknr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 45,
+  "topRow": 37,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "jos3sw26ll",
+  "widgetName": "displayChartImage3"
+}

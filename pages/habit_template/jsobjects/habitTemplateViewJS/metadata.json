@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "677bf5408959e507b80f055e_5568dd6b-9769-4615-ac9a-398b47b8d2ed",
+  "id": "habit_template_habitTemplateViewJS",
+  "unpublishedCollection": {
+    "name": "habitTemplateViewJS",
+    "pageId": "habit_template",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

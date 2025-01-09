@@ -1,0 +1,5 @@
+UPDATE habit_templates 
+SET prompt='{{this.params.prompt}}',ext_info='{{this.params.ext_info}}',ext_desc='{{this.params.ext_desc}}',display_chart1='{{this.params.display_chart1}}',
+    display_chart2='{{this.params.display_chart2}}',display_chart3='{{this.params.display_chart3}}',display_chart4='{{this.params.display_chart4}}',
+		take_habit_from_repetitions='{{this.params.take_habit_from_repetitions}}', updated_at = now()
+WHERE id = {{this.params.id}};

@@ -1,0 +1,17 @@
+{
+	"model":"wanx-poster-generation-v1",
+	"input": {
+		"title":"{{this.params.prompt}}",
+		"sub_title":"{{this.params.ext_info}}",
+		"body_text":"{{this.params.body_info}}",
+		"prompt_text_zh":"{{this.params.ext_desc}}",
+		"wh_ratios":"横版",
+		"lora_name":"童话油画",
+		"lora_weight":0.9,
+		"ctrl_ratio":0.7,
+		"ctrl_step":0.7,
+		"generate_mode":"generate",
+		"generate_num":1
+	},
+	"parameters":{}
+}

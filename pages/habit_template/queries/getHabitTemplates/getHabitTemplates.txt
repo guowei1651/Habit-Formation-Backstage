@@ -1,0 +1,3 @@
+SELECT * 
+FROM habit_templates
+WHERE delete_flag = FALSE;

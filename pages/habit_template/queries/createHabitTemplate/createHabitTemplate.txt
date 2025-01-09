@@ -1,0 +1,2 @@
+INSERT INTO habit_templates(prompt,ext_info,ext_desc,display_chart1,display_chart2,display_chart3,display_chart4,take_habit_from_repetitions)
+VALUES ('{{this.params.prompt}}', '{{this.params.ext_info}}', '{{this.params.ext_desc}}', '{{this.params.display_chart1}}', '{{this.params.display_chart2}}', '{{this.params.display_chart3}}', '{{this.params.display_chart4}}', '{{this.params.take_habit_from_repetitions}}');
