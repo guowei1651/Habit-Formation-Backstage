@@ -1,0 +1,3 @@
+UPDATE device_types 
+SET delete_flag = true 
+WHERE id = {{this.params.id}}

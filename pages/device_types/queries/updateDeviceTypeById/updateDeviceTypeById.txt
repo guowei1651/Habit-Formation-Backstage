@@ -1,0 +1,5 @@
+UPDATE device_types
+SET description='{{this.params.description}}',
+			applicable_models='{{this.params.applicable_models}}',
+			"name"='{{this.params.name}}'
+WHERE id={{this.params.id}};

@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "{{this.params.file}}"
+          "data": "{{this.params.filePicker.file[0]}}"
         },
         "bucket": {
           "data": "habit_image"
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "habit_template/{{this.params.name}}"
+          "data": "habit_template/{{this.params.filePicker.file[0].name}}"
         },
         "read": {
           "dataType": {

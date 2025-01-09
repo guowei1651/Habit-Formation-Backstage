@@ -55,7 +55,7 @@ export default {
 	successHabitTemplate() {
 		console.log('success Habit Template')
 		closeModal(habit_template_modal.name)
-		getHabitTemplates.run()
+		findHabitTemplates.run()
 	},
 	selectRow(row) {
 		this.fillHabitTemplateFrom(row)
@@ -80,30 +80,10 @@ export default {
 		}
 	},
 	uploadFile(file) {
-		if (!file) {
-			file = "http://vision-poster.oss-cn-shanghai.aliyuncs.com/jianguo.wjg%2F%E9%80%9A%E7%94%A8%E6%B5%B7%E6%8A%A5%E4%B8%93%E9%A1%B9%2Fresults_cache_dashscope%2F2025-01-08%2F2025-01-08-07-26-27_8879b989-6e98-43d5-8b12-3592bc79b7d3_0.render.png?OSSAccessKeyId=LTAI5tR9bWsP5EXAHGXGRYwE&Expires=1736407588&Signature=HaxuDKl%2Fc2eg4OmpEQvkR5FpaEs%3D"
-		}
-		console.log("upload file: ", file)
-		fetch(file,{mode:"no-cors"}).then((resp)=>{
-			console.log("download succesed", resp)
-			console.log("ok:", resp.ok)
-			console.log("redirected:",resp.redirected)
-			console.log("headers:", resp.headers)
-			console.log("status:", resp.status)
-			console.log("type:", resp.type)
-			return resp.blob()
-		}).then(blob=>{
-			var md = forge.md.sha256.create();
-			md.update(file);
-			const fileName = md.digest().toHex() + ".png";
-			var param = {
-				'name': fileName,
-				'file': blob
-			}
-			save_image.run(param)
-		}).catch((err)=>{
-			console.log("download error!", err)
-		})
+		var md = forge.md.md5.create();
+		md.update(file);
+		const fileName = md.digest().toHex() + ".png";
+		console.log(fileName)
 	},
 	getGrenateImageResult(taskId, timerName) {
 		console.log("getGrenateImageResult:",taskId)

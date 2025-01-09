@@ -1,0 +1,3 @@
+SELECT *
+FROM device_types
+WHERE delete_flag = FALSE;

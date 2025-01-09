@@ -1,0 +1,2 @@
+INSERT INTO appsmith.device_types ("name",applicable_models,description)
+VALUES ('{{this.params.name}}','{{this.params.applicable_models}}','{{this.params.description}}');

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "677bf5408959e507b80f055e_fd020ef2-d8e3-4b68-959a-91424ae1b3e4",
-  "id": "habit_template_getHabitTemplates",
+  "gitSyncId": "677bf5408959e507b80f055e_c87217bb-9ca0-44fc-b0e3-23d0d98a44fc",
+  "id": "device_types_updateDeviceTypeById",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM habit_templates\nWHERE delete_flag = FALSE;",
+      "body": "UPDATE device_types\nSET description='{{this.params.description}}',\n\t\t\tapplicable_models='{{this.params.applicable_models}}',\n\t\t\t\"name\"='{{this.params.name}}'\nWHERE id={{this.params.id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "本地数据库",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "getHabitTemplates",
-    "pageId": "habit_template",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "updateDeviceTypeById",
+    "pageId": "device_types",
     "userSetOnLoad": false
   }
 }
