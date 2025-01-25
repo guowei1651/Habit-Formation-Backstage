@@ -7,7 +7,16 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
@@ -17,6 +26,11 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#EAEDFB",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": false,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
   "icon": "tree",
   "pages": [
@@ -35,6 +49,10 @@
     {
       "id": "devices",
       "isDefault": false
+    },
+    {
+      "id": "carousel_template",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
@@ -44,7 +62,16 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "sidebar",
+      "orientation": "side",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
